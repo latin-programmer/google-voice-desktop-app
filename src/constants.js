@@ -13,13 +13,13 @@ const APPLICATION_ICON_SMALL_WITH_INDICATOR = 'tray-dirty-Google_Voice_icon_(202
 
 // URLs
 const URL_GOOGLE_VOICE           = 'https://voice.google.com'
-const URL_GITHUB_README          = 'https://github.com/jerrod-lankford/google-voice-desktop-app/blob/master/README.md'
-const URL_GITHUB_SECURITY_POLICY = 'https://github.com/jerrod-lankford/google-voice-desktop-app/blob/master/SECURITY.md'
-const URL_GITHUB_VIEW_ISSUES     = 'https://github.com/jerrod-lankford/google-voice-desktop-app/issues';
-const URL_GITHUB_REPORT_BUG      = 'https://github.com/jerrod-lankford/google-voice-desktop-app/issues/new?labels=bug';
-const URL_GITHUB_FEATURE_REQUEST = 'https://github.com/jerrod-lankford/google-voice-desktop-app/issues/new?labels=enhancement';
-const URL_GITHUB_ASK_QUESTION    = 'https://github.com/jerrod-lankford/google-voice-desktop-app/issues/new?labels=question';
-const URL_GITHUB_RELEASES        = 'https://github.com/jerrod-lankford/google-voice-desktop-app/releases';
+const URL_GITHUB_README          = 'https://github.com/latin-programmer/google-voice-desktop-app/blob/master/README.md'
+const URL_GITHUB_SECURITY_POLICY = 'https://github.com/latin-programmer/google-voice-desktop-app/blob/master/SECURITY.md'
+const URL_GITHUB_VIEW_ISSUES     = 'https://github.com/latin-programmer/google-voice-desktop-app/issues';
+const URL_GITHUB_REPORT_BUG      = 'https://github.com/latin-programmer/google-voice-desktop-app/issues/new?labels=bug';
+const URL_GITHUB_FEATURE_REQUEST = 'https://github.com/latin-programmer/google-voice-desktop-app/issues/new?labels=enhancement';
+const URL_GITHUB_ASK_QUESTION    = 'https://github.com/latin-programmer/google-voice-desktop-app/issues/new?labels=question';
+const URL_GITHUB_RELEASES        = 'https://github.com/latin-programmer/google-voice-desktop-app/releases';
 
 // Default Settings
 const DEFAULT_SETTING_SHOW_MENU_BAR   = true;
