@@ -18,6 +18,10 @@ header form[role='search'] {
     @extend %navbar-search;
 }
 
+body .gvPageRoot .title {
+    @extend %conversation-title;
+}
+
 /* Side Nav */
 gv-side-nav {
     @extend %side-nav;
@@ -28,6 +32,10 @@ gmat-nav-list .navListItem {
 }
 
 gv-side-nav a.navListItem.gmat-list-item-active {
+    @extend %side-nav-item-active;
+}
+
+div[class='mat-ripple container read ng-star-inserted active'] {
     @extend %side-nav-item-active;
 }
 
