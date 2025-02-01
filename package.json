@@ -1,6 +1,6 @@
 {
  "name": "voice-desktop-app",
- "version": "2025.102.01",
+ "version": "2025.102.101",
  "description": "An electron shell wrapper for the google voice app",
  "main": "src/main.js",
  "build": {
