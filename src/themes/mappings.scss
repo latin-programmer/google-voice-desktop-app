@@ -31,8 +31,20 @@ gv-side-nav a.navListItem.gmat-list-item-active {
     @extend %side-nav-item-active;
 }
 
+div[class='mat-ripple container read ng-star-inserted active'] {
+    @extend %side-nav-item-active;
+}
+
+div[class='mat-ripple container ng-star-inserted'] {
+    @extend %side-nav-item-active;
+}
+
 [role='tablist']:not(.expanded) .navItemBadge {
     @extend %side-nav-item-badge;
+}
+
+body .gvPageRoot .unread {
+    @extend %side-nav-item-active;
 }
 
 /* Conversation */
@@ -54,6 +66,20 @@ gv-message-list-header [gv-test-id='conversation-subtitle'],
     @extend %conversation-title;
 }
 
+body .gvPageRoot .title {
+    @extend %conversation-title;
+}
+
+body .gvPageRoot .primary-text {
+    @extend %conversation-title;
+}
+
+body .gvPageRoot .timestamp.read {
+    @extend %conversation-title;
+}
+
+
+
 gv-inbox-summary-ng2 .gv-inbox-summary .greeting,
 gv-inbox-summary-ng2 .gv-inbox-summary .status {
     @extend %conversation-summary;
@@ -64,6 +90,15 @@ gv-message-entry > div {
 }
 
 gv-message-item [layout-align='start start'] [gv-test-id='bubble'] {
+    @extend %conversation-message-recieved;
+}
+
+body .gvPageRoot .container {
+    @extend %conversation-summary;
+}
+
+
+body .gvPageRoot .incoming .bubble {
     @extend %conversation-message-recieved;
 }
 

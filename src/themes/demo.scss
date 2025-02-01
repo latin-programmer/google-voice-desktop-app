@@ -1,0 +1,117 @@
+/* Color Palette */
+
+$background: #002b36;
+$foreground: rgb(0, 0, 0);
+$primary: #2aa198;
+$secondary: #b58900;
+$selection: #839496;
+
+@use 'base';
+
+/** Debugging Styles for Demo Theme */
+
+/* Navbar */
+%navbar {
+    background-color: red; // Red for navbar
+}
+
+%navbar-title,
+%navbar input,
+%navbar input::placeholder,
+%navbar svg,
+%navbar-search svg {
+    color: $foreground; // Keep text readable
+}
+
+%navbar-search {
+    background-color: rgb(92, 255, 71); // Tomato (light red) for the search bar to distinguish it from the rest of the navbar
+}
+
+/* Side Nav */
+%side-nav {
+    background-color: green; // Green for side navigation
+}
+
+%side-nav-item {
+    background-color: lightgreen; // Light green for side nav items to distinguish individual items from the container
+    color: $foreground; // Ensure text remains visible
+}
+
+%side-nav-item-active {
+    background-color: purple; // Purple to indicate the active side nav item
+}
+
+%side-nav-item-badge {
+    background-color: violet; // Violet for side nav badges
+}
+
+/* Conversation */
+%conversation {
+    background-color: rgb(0, 204, 255); // Yellow for main conversation area
+    color: $foreground; // Text remains visible
+}
+
+%conversation-header {
+    background-color: orange; // Orange for the conversation header
+    color: $foreground;
+}
+
+%conversation-footer {
+    background-color: orange; // Orange for the conversation footer (to match header)
+    color: $foreground;
+}
+
+%conversation-message-recieved {
+    background-color: $secondary; // Use secondary color for received messages
+    color: $foreground;
+}
+
+%conversation-message-sent {
+    background-color: $primary; // Use primary color for sent messages
+    color: $foreground;
+}
+
+/* Lists */
+%list {
+    background-color: #004d40; // Teal dark for general list area to differentiate from others
+}
+
+%list-item {
+    background-color: pink; // Pink for list items (e.g., contacts, message threads)
+    color: $foreground; // Ensure visibility of text on pink
+}
+
+%list-item svg {
+    color: black; // Black for any SVGs within list items for better contrast
+}
+
+%list-item-active,
+%list-item:hover {
+    background-color: cyan; // Cyan for active or hovered list items to differentiate from others
+}
+
+%list-item-heading,
+%list-item-detail {
+    color: $foreground; // Ensure text is visible on pink background
+}
+
+/* Dial Pad */
+%dial-pad {
+    background-color: blue; // Blue for dial pad
+    color: $foreground; // Ensure text is visible on blue
+}
+
+%dial-pad-button {
+    background-color: lightblue; // Light blue for dial pad buttons
+    color: $foreground;
+}
+
+%dial-pad-button:hover {
+    background-color: darkblue; // Dark blue for hover state to indicate interaction
+}
+
+%dial-pad-toggle {
+    background-color: navy; // Navy for dial pad toggle to distinguish from dial pad area
+    color: $foreground; // Ensure visibility of toggle text
+}
+
