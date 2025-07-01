@@ -143,15 +143,12 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
-"@types/node@*":
-  version "18.0.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.3.tgz#463fc47f13ec0688a33aec75d078a0541a447199"
-  integrity sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==
-
-"@types/node@^16.11.26":
-  version "16.18.27"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.27.tgz#d515767a4a7bc44eaec336ac7ff1bde338a17704"
-  integrity sha512-GFfndd/RINWD19W+xNJ9Qh/sOZ5ieTiOSagA86ER/12i/l+MEnQxsbldGRF23azWjRfe7zUlAldyrwN84a1E5w==
+"@types/node@*", "@types/node@^18.11.18":
+  version "18.19.113"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.113.tgz#f48df552584e47fb4a8bc0b39e1377112be105de"
+  integrity sha512-TmSTE9vyebJ9vSEiU+P+0Sp4F5tMgjiEOZaQUW6wA3ODvi6uBgkHQ+EsIu0pbiKvf9QHEvyRCiaz03rV0b+IaA==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/plist@^3.0.1":
   version "3.0.2"
@@ -927,13 +924,13 @@ electron-store@^8.0.0:
     conf "^10.1.2"
     type-fest "^2.12.2"
 
-electron@^22.3.25:
-  version "22.3.25"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-22.3.25.tgz#a9a70b63a6712c658cd7fab343129b2a78450f80"
-  integrity sha512-AjrP7bebMs/IPsgmyowptbA7jycTkrJC7jLZTb5JoH30PkBC6pZx/7XQ0aDok82SsmSiF4UJDOg+HoLrEBiqmg==
+electron@^28.3.2:
+  version "28.3.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-28.3.2.tgz#5bf674fe9a440e5d8e51627c66fc8d4bce4c409f"
+  integrity sha512-bmrQpdncbYNTArlg4n+qsASoXy3eeCELxeRmwUS52RNgvio1gGx5FLCwf8d4R+TsxwfkDWOaWbW0taIKheivKA==
   dependencies:
     "@electron/get" "^2.0.0"
-    "@types/node" "^16.11.26"
+    "@types/node" "^18.11.18"
     extract-zip "^2.0.1"
 
 emoji-regex@^8.0.0:
@@ -2175,6 +2172,11 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 unique-string@^2.0.0:
   version "2.0.0"
