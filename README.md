@@ -43,14 +43,12 @@ Not only themes but also a system for themeing! If you want to create your own t
 ## Run From Source
 `git clone git@github.com:latin-programmer/google-voice-desktop-app.git`
 
-`npm install -g yarn`
+`npm install`
 
-`yarn install`
-
-`yarn start`
+`npm start`
 
 To build yourself you can run
-`yarn run build:windows` or `yarn run build:mac` or `yarn run build:linux`
+`npm run build:windows` or `npm run build:mac` or `npm run build:linux`
 
 Note: the current maintainer is only able to do windows builds. If you would like, you can review what is needed for the mac and linux versions and help out with those (basically, for mac you need a Mac, and for Linux you need a Linux VM).
 
