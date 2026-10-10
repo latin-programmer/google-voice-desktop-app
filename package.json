@@ -31,6 +31,7 @@
   "build:x64": "electron-builder --mac --windows --linux --x64",
   "build:arm64": "electron-builder --mac --windows --linux --arm64",
   "release": "electron-builder --mac --windows --linux --x64 --arm64 --publish always"
+  ,"test": "node test/run-tests.js"
  },
  "keywords": [
   "electron",

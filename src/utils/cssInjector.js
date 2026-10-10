@@ -1,4 +1,4 @@
-const sass = require('sass');
+let sass;
 const fs = require('fs');
 const path = require('path');
 
@@ -6,7 +6,7 @@ const BASE = `base.scss`;
 const MAPPINGS = `mappings.scss`;
 const HIDE_DIALER_SIDEBAR_CSS = `gv-call-sidebar { display: none }`;
 
-module.exports = class Injector {
+class Injector {
     constructor(app, win) {
         this.win = win;
         this.app = app;
@@ -27,6 +27,9 @@ module.exports = class Injector {
     }
 
     injectTheme(theme) {
+        if (!sass) {
+            sass = require('sass');
+        }
         if (this.styleKey) {
             this.win.webContents.removeInsertedCSS(this.styleKey);
             this.styleKey = null;
@@ -50,6 +53,9 @@ module.exports = class Injector {
         }
     }
 }
+
+module.exports = Injector;
+module.exports.joinImports = joinImports;
 
 /**
  * The way sass processes use functions just isn't good enough, we need variables that can scope across files and we also
